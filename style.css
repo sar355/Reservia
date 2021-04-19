@@ -1,4 +1,78 @@
-* { 
-    margin: 0;
-     padding: 0
-    }
+body {
+  background-color: #f2f2f2;
+}
+
+#block_page {
+  width: 900px;
+  margin: auto;
+}
+/* MAIN BLOCK PRINCIPALE */
+
+/* MAIN BLOCK PRINCIPALE */
+
+/* EN-TÊTE */
+#en-tête {
+  border: 2px black solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#logo {
+  display: flex;
+  align-items: baseline;
+}
+
+#titre_principale {
+  border: 2px black solid;
+  display: flex;
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  border: 1px black solid;
+  margin-right: 15px;
+}
+/* EN-TÊTE */
+
+/* SECTION DE RECHERCHE */
+
+@font-face {
+  font-family: "ralewayregular";
+  src: url("fonts/raleway-regular-webfont.woff2") format("woff2"),
+    url("fonts/raleway-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#section_recherche {
+  border: 2px black solid;
+}
+
+p {
+  font-family: "ralewayregular", arial;
+  font-size: 1em;
+}
+
+h1,
+h2 {
+  font-size: 1.3em;
+  font-family: "ralewayregular", arial;
+}
+/* SECTION DE RECHERCHE */
+
+/* HÉBERGEMENT */
+#hébergement {
+    border: 2px black solid;
+
+/* HÉBERGEMENT */
+
+/* ACTIVITÉ */
+#activité {
+    border: 2px black solid; }
+/* ACTIVITÉ */
