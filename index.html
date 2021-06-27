@@ -9,8 +9,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
+      type="text/css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <script
@@ -34,59 +35,62 @@
 
         <nav id="navigation">
           <ul>
-            <li class="bar-haut"><a href="#hebergement">Hébergement</a></li>
-            <li class="bar-haut"><a href="#activite">Activité</a></li>
-            <li class="sinscrire-bleu"><a href="#">S'inscrire</a></li>
+            <li class="bar-haut pop">
+              <a href="#hebergement" class="pip">Hébergements</a>
+            </li>
+            <li class="bar-haut">
+              <a href="#activite" class="padding-right">Activités</a>
+            </li>
           </ul>
         </nav>
+        <a href="#" class="sinscrire-bleu">S'inscrire</a>
       </header>
       <!-- HEADER -->
 
       <!-- MAIN BLOCK PRINCIPALE -->
-      <main id="partie principale">
+      <main id="partie_principale">
         <!-- SECTION DE RECHERCHE-->
         <section id="section_recherche">
           <header class="header-sect-recherche">
-            <h1>Trouver votre hébergement pour des vancance de rêve</h1>
+            <h1>Trouver votre hébergement pour des vancances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
           </header>
 
           <form class="bar-de-recherche">
-            <div class="bar-de-recherche">
-              <i class="fas fa-map-marker-alt"></i>
-              <input type="recherche" name="" value="Marseille, France" />
-              <button type="submit">RECHERCHE</button>
-            </div>
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" name="ras" value="Marseille, France" />
+            <button type="submit">Rechercher</button>
+            <i class="fas fa-search"></i>
           </form>
 
           <div class="categorie-recherche">
             <div class="Filtre margin-right">
-              <p>Filtre</p>
+              <p>Filtres</p>
             </div>
 
-            <div class="economique margin-right">
-              <i class="fas fa-money-bill-wave"></i>
+            <div class="economique margin-right block-icon-contenu">
+              <i class="fa fa-money-bill-wave icon-block"></i>
               <span>Économique</span>
             </div>
 
-            <div class="familial margin-right">
+            <div class="familial margin-right block-icon-contenu">
               <i class="fas fa-child"></i>
               <span>Familial</span>
             </div>
 
-            <div class="romantique margin-right">
+            <div class="romantique margin-right block-icon-contenu">
               <i class="fas fa-heart"></i>
               <span>Romantique</span>
             </div>
 
-            <div class="animaux margin-right">
-              <i class="fas fa-dog"></i>
+            <div class="animaux margin-right block-icon-contenu">
+              <i class="fas fa-dog block-icon"></i>
               <span>Animaux autorisés</span>
             </div>
           </div>
 
           <div class="logement-disponible">
-            <i class="fas fa-info margin-right"></i>
+            <i class="fas fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </section>
@@ -95,7 +99,9 @@
         <!-- HÉBERGEMENT-->
         <div class="div-hebergement-orange">
           <section class="sec-heberg-marseille-vert">
-            <h2 id="hebergement">Hébergement à Marseille</h2>
+            <h2 id="hebergement">
+              <strong> Hébergements à Marseille </strong>
+            </h2>
             <div id="hebergement-marseille-rouge">
               <a href="#" class="block-image-et-contenu-marseille">
                 <div class="conteneur-image-marseille">
@@ -187,7 +193,7 @@
                 </div>
 
                 <div class="block-info-marseille">
-                  <h3>Hauberge le panier</h3>
+                  <h3>Auberge le panier</h3>
                   <p>Nuit à partir de <span>23€</span></p>
                   <i class="fas fa-star fa-star-blue"></i>
                   <i class="fas fa-star fa-star-blue"></i>
@@ -235,14 +241,17 @@
                     alt=""
                   />
                 </div>
+
                 <div class="width-contenu">
                   <h3>Hôtel le soleil du matin</h3>
-                  <p>Nuit à partir de <span>96€</span></p>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
+                  <p>Nuit à partir de <span>128€</span></p>
+                  <div>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                  </div>
                 </div>
               </a>
 
@@ -254,14 +263,17 @@
                     alt=""
                   />
                 </div>
+
                 <div class="width-contenu">
                   <h3>Au coeur de l'eau Chambre d'hôtes</h3>
-                  <p>Nuit à partir de <span>96€</span></p>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-grey"></i>
+                  <p>Nuit à partir de <span>71€</span></p>
+                  <div>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-grey"></i>
+                  </div>
                 </div>
               </a>
 
@@ -273,14 +285,18 @@
                     alt=""
                   />
                 </div>
+
                 <div class="width-contenu">
                   <h3>Hôtel tout bleu et blanc</h3>
-                  <p>Nuit à partir de <span>96€</span></p>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-blue"></i>
-                  <i class="fas fa-star fa-star-grey"></i>
+                  <p>Nuit à partir de <span>68€</span></p>
+
+                  <div>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-blue"></i>
+                    <i class="fas fa-star fa-star-grey"></i>
+                  </div>
                 </div>
               </a>
             </div>
@@ -295,10 +311,11 @@
           <div class="act_globale">
             <div class="act_uneimage largeur_image">
               <a href="#" class="contenu_cliquable">
-                <div>
+                <div class="contenant-grande-image">
                   <img
                     src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                     alt=""
+                    class="grande-image"
                   />
                 </div>
                 <h3>Vieux port</h3>
@@ -307,20 +324,22 @@
 
             <div class="act_doubleimage largeur_image">
               <a href="#" class="contenu_cliquable">
-                <div>
+                <div class="contenant-moyenne-image">
                   <img
                     src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                     alt=""
+                    class="moyenne-image"
                   />
                 </div>
-                <h3>Fort de pomègue</h3>
+                <h3>Fort de pomègues</h3>
               </a>
 
               <a href="#" class="contenu_cliquable">
-                <div>
+                <div class="contenant-petite-image">
                   <img
                     src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                     alt=""
+                    class="petite-image"
                   />
                 </div>
                 <h3>Îles de Frioul</h3>
@@ -329,10 +348,11 @@
 
             <div class="act_uneimage largeur_image">
               <a href="#" class="contenu_cliquable">
-                <div>
+                <div class="contenant-grande-image">
                   <img
                     src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                     alt=""
+                    class="grande-image"
                   />
                 </div>
                 <h3>Parc National des Calanques</h3>
@@ -341,23 +361,25 @@
 
             <div class="act_doubleimage largeur_image">
               <a href="#" class="contenu_cliquable">
-                <div>
+                <div class="contenant-meme-taille-image">
                   <img
                     src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                     alt=""
+                    class="meme-taille"
                   />
                 </div>
-                <h3>Notre-Dame-de-la-garde</h3>
+                <h3>Notre-Dame-de-la-Garde</h3>
               </a>
 
               <a href="#" class="contenu_cliquable">
-                <div>
+                <div class="contenant-meme-taille-image">
                   <img
                     src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                     alt=""
+                    class="meme-taille"
                   />
                 </div>
-                <h3>Park Longchanp</h3>
+                <h3>Parc Longchanp</h3>
               </a>
             </div>
           </div>
@@ -377,7 +399,7 @@
       </div>
 
       <div>
-        <h3>Nos hébergement</h3>
+        <h3>Nos hébergements</h3>
         <a href="#">Charte de qualité </a>
         <a href="#">Soumettre votre hôtel</a>
       </div>
