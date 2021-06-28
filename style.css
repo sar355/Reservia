@@ -327,6 +327,35 @@ nav a {
   }
 }
 
+
+/* ESSAIE DU 28/06  */
+.block-recherche  {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.block-recherche .Filtre {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .block-recherche .Filtre {
+    display: flex;
+  }
+
+  .categorie-recherche .familial{
+    margin-right: 0px;
+  }
+
+  .categorie-recherche .animaux {
+    margin-right: 26px;
+  }
+}
+
+/* ESSAIE DU 28/06  */
+
 .categorie-recherche {
   /* border: 1px black solid; */
   display: flex;
@@ -340,11 +369,14 @@ nav a {
 @media screen and (max-width: 600px) {
   .categorie-recherche {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    /* essaie à la place de flex-start */
+    justify-content: space-between;
+    /* essaie à la place de flex-start */
     align-items: flex-start;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 10px;
   }
 }
